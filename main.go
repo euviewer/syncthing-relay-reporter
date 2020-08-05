@@ -79,7 +79,7 @@ func configuration_builder() configuration {
 		panic("No Syncthing relay URL found! Set with the --relay-url= argument.")
 	}
 	if conf.syncthingRelayName == "default-relay" {
-		logging("No Syncthing relay name found! Using the default name 'default-relay'. Set with the --relay-url= argument.")
+		logging("No Syncthing relay name found! Using the default name 'default-relay'. Set with the --relay-name= argument.")
 	}
 	if conf.influxdbUrl == "" {
 		panic("No InfluxDB URL found! Set with the --influxdb-url= argument.")
