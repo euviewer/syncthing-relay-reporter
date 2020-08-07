@@ -16,7 +16,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": 5,
-  "iteration": 1596806516287,
+  "iteration": 1596817130188,
   "links": [],
   "panels": [
     {
@@ -105,7 +105,8 @@
                 "value": null
               }
             ]
-          }
+          },
+          "unit": "KBs"
         },
         "overrides": []
       },
@@ -133,7 +134,7 @@
       "pluginVersion": "7.1.1",
       "targets": [
         {
-          "alias": "KB/s",
+          "alias": "",
           "groupBy": [],
           "measurement": "/^$relay_name$/",
           "orderByTime": "ASC",
@@ -151,6 +152,12 @@
               {
                 "params": [],
                 "type": "last"
+              },
+              {
+                "params": [
+                  " / 60"
+                ],
+                "type": "math"
               }
             ]
           ],
@@ -159,7 +166,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "KB/s last 1 minute",
+      "title": "Data rates (last 1 minute)",
       "type": "stat"
     },
     {
@@ -1095,5 +1102,5 @@
   "timezone": "",
   "title": "Syncthing Relay",
   "uid": "7_meqzSMk",
-  "version": 15
+  "version": 17
 }
